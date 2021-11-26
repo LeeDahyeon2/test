@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.smarthome.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_notice"
+        android:name="com.example.smarthome.ui.Notice.NoticeFragment"
+        android:label="공지사항"
+        tools:layout="@layout/fragment_notice" />
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.example.smarthome.ui.alarm.AlarmFragment"
+        android:label="알람내역"
+        tools:layout="@layout/fragment_alarm" />
+
+    <fragment
+        android:id="@+id/nav_board"
+        android:name="com.example.smarthome.ui.Board.BoardFragment"
+        android:label="자유게시판"
+        tools:layout="@layout/fragment_board" />
+
+    <fragment
+        android:id="@+id/nav_qna"
+        android:name="com.example.smarthome.ui.QnA.QnAFragment"
+        android:label="QnA"
+        tools:layout="@layout/fragment_qna" />
+
+    <fragment
+        android:id="@+id/nav_nowhome"
+        android:name="com.example.smarthome.ui.nowhome.NowhomeFragment"
+        android:label="우리집"
+        tools:layout="@layout/fragment_nowhome" />
+</navigation>

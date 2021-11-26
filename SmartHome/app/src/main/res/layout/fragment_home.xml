@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardBackgroundColor="#223C6F">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="#102A5D"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnOut"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_shape_unable"
+                            android:text="외출"
+                            android:textColor="@color/white"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnIn"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginVertical="5dp"
+                            android:background="@drawable/btn_shape_able"
+                            android:text="@string/light1"
+                            android:textColor="@color/black"
+                            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnSleep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_shape_unable"
+                            android:text="취침"
+                            android:textColor="@color/white"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtWeather"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="구름조금"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/txtTemp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="26.3º"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cloudy" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtDust"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="미세먼지 보통"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/txtDustVal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="40㎍/m³"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            app:cardBackgroundColor="#EAEAEA">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="우리집 기기" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/light1"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black" />
+
+                                <Button
+                                    android:id="@+id/btn_chooseLight1"
+                                    android:layout_width="125dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="색상 선택" />
+
+                                <Switch
+                                    android:id="@+id/switchLight1"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView22"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/light2"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/black" />
+
+                                <Button
+                                    android:id="@+id/btn_chooseLight2"
+                                    android:layout_width="125dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="색상 선택" />
+
+                                <Switch
+                                    android:id="@+id/switchLight2"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="104dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/fan"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp" />
+
+                                <Switch
+                                    android:id="@+id/switchFan"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="64dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/door"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black" />
+
+                                <Switch
+                                    android:id="@+id/switchDoor"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView25"
+                                    android:layout_width="64dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/window"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black" />
+
+                                <Switch
+                                    android:id="@+id/switchWindow"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView26"
+                                    android:layout_width="64dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/CCTV"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black" />
+
+                                <Switch
+                                    android:id="@+id/switchCCTV1"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView27"
+                                    android:layout_width="64dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="CCTV2"
+                                    android:textSize="20dp"
+                                    android:textColor="@color/black" />
+
+                                <Switch
+                                    android:id="@+id/switchCCTV2"
+                                    android:layout_width="172dp"
+                                    android:layout_height="70dp"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="6dp"
+                                    android:background="@color/white"
+                                    tools:ignore="TouchTargetSizeCheck,UseSwitchCompatOrMaterialXml" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
